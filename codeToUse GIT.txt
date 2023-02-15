@@ -1,0 +1,17 @@
+C:\GitNgCourse>echo "# NgCourse" >> README.md
+
+C:\GitNgCourse>git init
+
+C:\GitNgCourse>git add README.md
+
+C:\GitNgCourse>git commit -m "first commit"
+
+C:\GitNgCourse>git config --global user.email "e.emiliano19@gmail.com"
+
+C:\GitNgCourse>git config --global user.name enriqueromero
+
+C:\GitNgCourse>git branch -M main
+
+C:\GitNgCourse>git remote add origin https://github.com/EnriqueRomeroHuitron/NgCourse.git
+
+C:\GitNgCourse>git push -u origin main

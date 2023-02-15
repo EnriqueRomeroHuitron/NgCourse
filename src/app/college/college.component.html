@@ -1,0 +1,52 @@
+<!-- One way databinding / String interpolation using {{ }}  -->
+
+<strong class="text-primary"> 1-Way data binding / String interpolation</strong>
+<br/>
+
+Server name is : {{serverName}} <br/>
+College name is : {{collegeName}} <br />
+Course name is : {{courseName}} <br />
+year is : {{year}}
+
+<hr/>
+
+<!-- Property Binding using [] -->
+
+<strong class="text-primary">Property Binding using [] </strong> <br/>
+
+<button class="btn btn-info p-2" [disabled]="flag"> Submit </button>
+
+<hr/>
+
+<!-- Event Binding using ()  -->
+
+<strong class="text-primary"> Event Binding using () </strong> <br/>
+
+<button type="button" class="btn btn-warning" (click)="onClick()"> Click Me! </button>
+
+<hr/>
+
+<!-- 2 Way data binding  -->
+
+<!-- [(ngModel)] -->
+<strong class="text-primary"> 2 Way data binding using [(ngModel)] </strong> <br/>
+
+Enter Name : <input type="text" [(ngModel)]="empname">
+<br/>
+Entered name is : {{empname}}
+
+<br/> <br/>
+
+Enter user name : <input type="text" [(ngModel)]="uname"> <br/>
+Enter password : <input type="number" [(ngModel)]="pwd"> 
+<br/>
+<button type="submit" (click)="onLogIn()">LogIn</button>
+<button type="submit" (click)="onClear()">Clear</button>
+<br />
+<!-- <span> Entered user name is : {{uname}} and the password is : {{pwd}}</span> -->
+
+Enter actual user name : <input type="text" [(ngModel)]="userNameInput"> <br />
+Enter actual password : <input type="text" [(ngModel)]="pswNameInput">
+<br />
+<button type="submit" (click)="onActLogIn()">LogInActual</button>
+<br />

@@ -1,0 +1,46 @@
+<!-- <div class="d-inline">
+
+    <button class="btn btn-success">Success </button>
+
+</div>
+
+<div class="d-inline p-3">
+
+    <button class="btn btn-danger">Failed </button>
+
+</div> -->
+
+<div class="container">
+    <h5 class="text-danger">1-Way data binding / String interpolation </h5>
+    
+            My name is {{fname}} {{lname}}
+
+    <hr />
+
+    <h5 class="text-danger">Property Binding using []</h5>
+        
+        <button class="btn btn-primary p-2" [disabled]="flag"> Submit </button>
+
+    <hr />
+
+    <h5 class="text-danger">Event Binding using ()</h5>
+    <button type="button" class="btn btn-primary" (click)="onClick()"> Click Me! </button>
+    
+
+    <hr />
+
+    <h5 class="text-danger">2 Way data binding using [(ngModel)]</h5>
+    <form>
+        <div class="form-group p-2">
+            <label for="username">User name:</label>
+            <input type="text" class="form-control" id="username" [(ngModel)]="username">
+        </div>
+        <div class="form-group p-2">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" [(ngModel)]="password">
+        </div>
+        <div class="text-center">
+        <button type="button" class="btn btn-dark" (click)="validateLogin()">Access</button>
+        </div>
+    </form>
+</div>
