@@ -15,3 +15,11 @@ C:\GitNgCourse>git branch -M main
 C:\GitNgCourse>git remote add origin https://github.com/EnriqueRomeroHuitron/NgCourse.git
 
 C:\GitNgCourse>git push -u origin main
+
+HOW TO PUSH FILES
+
+C:\GitNgCourse>git add *.*
+
+C:\GitNgCourse>git commit -m "Adding stc folder"
+
+C:\GitNgCourse>git push -u origin main
